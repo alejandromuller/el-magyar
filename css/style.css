@@ -51,9 +51,8 @@
    color: #f2f2f2;
 }
 
-.social-container {margin-left: 50px;
-
-
+.social-container {
+   margin-left: 50px;
 }
 
 .social-container img {
@@ -88,6 +87,8 @@
    text-decoration: none;
    
 }
+
+
 
 .nav2-container {
    padding-top: 20px;
