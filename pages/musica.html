@@ -11,12 +11,12 @@
 
 <body>
 
-    <body>
+    <main class="main-container">
         <header>
             <nav class="nav2-container">
 
                 <!-- SECTION LOGO -->
-                <h1 class="logo2"><a href="/index.html">Magyar Del Molino</h1>
+                <div class="logo2"><a href="../index.html" class="logo-nav-link">Magyar Del Molino</div>
                 <!-- SECOND NAVBAR FOR PAGES -->
                 <ul class="flex-list2">
                     <li class="nav-list2"><a class="nav-link2" href="musica.html">Musica</a></li>
@@ -35,11 +35,12 @@
         </header>
 
         <main>
-            <section>
-                <h2>Ultimos Lanzamientos</h2>
+            <section class="container-musica">
 
-                <article>
-                    <ul>
+                <h2 class="title-musica">Ultimos Lanzamientos</h2>
+
+                <article class="container-musica">
+                    <ul class="lista-musica">
                         <li>Intro</li>
                         <li>Balada Terrenal</li>
                         <li>Respirar</li>
@@ -49,27 +50,34 @@
                         <li>Rabbit</li>
                         <li>Fluir</li>
                     </ul>
+                    <div class="musica-container2">
 
-                    <h2>ALBUMS</h2>
+                        <div>
+                            <h2>ALBUMS</h2>
+                            <h3>EP01 "Debut"</h3>
+                        </div>
 
-                    <h3>EP01 "Debut"</h3>
-
-                    <video src="../video/MAGYAR-DEBUT-Intro.mp4" controls height="240 px" width="427 px"></video>
+                        <video src="../video/MAGYAR-DEBUT-Intro.mp4" controls height="240 px" width="427 px"></video>
+                    </div>
                 </article>
 
 
-                <article>
+                <article class="musica-video-container">
 
                     <h2>VIDEOS</h2>
 
-                    <a href="https://www.youtube.com/watch?v=mZ1cGY0VwyM" target="_blank">Limon Blue - Luna Nueva</a>
+                    <iframe src="https://www.youtube.com/embed/mZ1cGY0VwyM" controls height="240px" width="427px"></iframe>
+                    <a href="" target="_blank">Limon Blue - Luna Nueva</a>
                     <div></div>
-                    <a href="https://www.youtube.com/watch?v=fn3sSu1kp_8" target="_blank">Limon Blue - Ale Ale</a>
+                    <a href="https://www.youtube.com/embed/fn3sSu1kp_8" target="_blank">Limon Blue - Ale Ale</a>
+                    <iframe src="https://www.youtube.com/embed/fn3sSu1kp_8" controls height="240px" width="427px"></iframe>
                     <div></div>
-                    <a href="https://www.youtube.com/watch?v=-PyUF4GhLhg&list=OLAK5uy_k4iJdQ44lSXaapIAUutdKjGbo8kZRnXQc"
+                    <a href="https://www.youtube.com/embed/PyUF4GhLhg"
                         target="_blank">Limon Blue - Limonada - EP</a>
+                        <iframe src="https://www.youtube.com/embed/-PyUF4GhLhg" controls height="240px" width="427px"></iframe>
                     <div></div>
                     <a href="https://www.youtube.com/watch?v=yu3TXHuPI4Q" target="_blank">Griego - Canchero</a>
+                    <iframe src="https://www.youtube.com/embed/yu3TXHuPI4Q" controls height="240px" width="427px"></iframe>
                 </article>
 
                 <div></div>
@@ -111,6 +119,6 @@
                     crossorigin="anonymous"></script>
 
 
-    </body>
+</body>
 
 </html>

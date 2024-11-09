@@ -3,16 +3,37 @@
 * {
    margin: 0;
    padding: 0;
+
+}
+
+
+
+.main-home-container{
+   height: 100%;
+}
+
+/* ---------------  utilizo 65vw vw como unidad responsiva - margin 0 AUTO CENTRO EL CONTENIDO CON ESO  -----------------  */
+.main-container{
+max-width: 65vw;
+margin: 0 auto; 
 }
 
 .logo {
    color: #f2f2f2;
-   font-size: 34px;
+   font-size: 5.5rem;
    font-family: "Inter", sans-serif;
    /* Asegúrate de cargar la fuente */
    font-weight: 700;
    word-wrap: break-word;
-   margin-left: 50px;
+   margin-left: 250px;   
+}
+
+
+.nav-container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
 }
 
 .navbar {
@@ -74,8 +95,13 @@
 
 
 /* ---------------  FOTOS PAGE SECTION -----------------  */
+.logo-nav-link a{
+   text-decoration: none;
+}
+
 
 .logo2 {
+   border: 1px solid black;
    margin-left: 2rem;
    color: black;
    font-size: 34px;
@@ -84,11 +110,54 @@
    font-weight: 700;
    word-wrap: break-word;
    font-weight: 500;
-   text-decoration: none;
-   
 }
 
+.logo-nav-link {
+   color: #333; /* O cualquier color que prefieras */
+   text-decoration: none;
+}
 
+.container-musica{
+   border: 1px solid black;
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   flex-direction: column;
+
+}
+
+.musica-container2{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   gap: 30px;
+
+}
+
+.title-musica{
+   text-align: center;
+}
+
+.lista-musica{
+   font-size: 1.5rem;
+   display: flex;
+   justify-content: center;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   gap:50px;
+   text-align: center;
+   text-decoration: none;
+   list-style: none;
+}
+
+.musica-video-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
 
 .nav2-container {
    padding-top: 20px;
@@ -158,7 +227,30 @@
 }
 
 
+.body-contacto{
+   height: 100%;
+}
 
+.contacto-padre{
+   display: flex;
+   flex-direction: column;
+   gap: 100px;
+   align-items: center;
+   height: 30vw;
+   border: 1px solid black;
+}
+
+.formulario-container{
+   border: 1px solid black;
+}
+
+.titulo-contacto{
+   border: 1px solid black;
+   width: 100%;
+   text-align: center;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
 
 
 
