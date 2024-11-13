@@ -7,104 +7,136 @@
     <meta name="description" content="Portafolio de un joven fotógrafo y músico">
     <title>El Magyar Del Molino</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
 
     <main class="main-container">
         <header>
-            <nav class="nav2-container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand logo-categorias" href="/">EL MAGYAR </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <!-- SECTION LOGO -->
-                <div class="logo2"><a href="../index.html" class="logo-nav-link">Magyar Del Molino</div>
-                <!-- SECOND NAVBAR FOR PAGES -->
-                <ul class="flex-list2">
-                    <li class="nav-list2"><a class="nav-link2" href="musica.html">Musica</a></li>
-                    <li class="nav-list2"><a class="nav-link2" href="foto.html">Foto</a></li>
-                    <li class="nav-list2"><a class="nav-link2" href="cineytv.html">Cine y TV</a></li>
-                    <li class="nav-list2"><a class="nav-link2" href="biografia.html">Bio</a></li>
-                    <li class="nav-list2"><a class="nav-link2" href="contacto.html">Contacto</a></li>
-                    <div class="mobile-menu">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 7h22M4 15h22M4 23h22" />
-                        </svg>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="dropdown-item" href="#"></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dropdown-item" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dropdown-item" href="#"></a>
+                        </li>
+                    </ul>
+                    <div class="form-inline my-2 my-lg-0">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="./musica.html">Musica</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="./foto.html">Foto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="./cineytv.html">Cine y tv</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="./biografia.html">Bio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                
                     </div>
-                </ul>
+                </div>
             </nav>
         </header>
 
-        <article>
-            <h2>Carrera</h2>
+        <section class="cineytv-container">
+            <!-- CV  nomenclatura snake-case ex: footer-container menu-image logo-container    -->
+
+            <!-- <h2 class="titulo-carrera text-cineytv">Carrera</h2> -->
+
             <p>Con una sólida formación Audiovisual en la prestigiosa carrera profesional de Diseñador Audiovisual por
                 la Universidad de Buenos Aires (UBA).</p>
-            <div></div>
+
             <p>El Magyar ha trabajado como editor de sonido y video en algunos de los programas más icónicos de la
                 televisión argentina.</p>
-            <div></div>
-            <p>Estos programas han sido conocidos por su enfoque documental y realista, lo que ha permitido a El Magyar
+
+            <p class="text-cine-child">Estos programas han sido conocidos por su enfoque documental y realista, lo que ha permitido a El Magyar
                 desarrollar un estilo de edición con características de videoclip, donde el ritmo, la música y la imagen
                 se fusionan de manera impactante y dinámica.</p>
 
-            <ul>
-                <li>Policias En Accion</li>
-                <img src="../image/tv-policas-en-accion.jpeg" height="200px" width="300px" alt="Policias En Accion">
-                <li>Carceles</li>
-                <img src="../image/tv-carceles.jpg" height="200px" width="300px" alt="Carceles">
-                <li>Am: Donde Sino</li>
-                <img src="../image/tv-am.jpg" height="200px" width="300px" alt="Am">
-                <li>Cuestion De Peso</li>
-                <img src="../image/tv-cuestion-de-peso.jpg" height="200px" width="200px" alt="Cuestion De Peso">
-                <li>Gran Hermano</li>
-                <img src="../image/tv-gran-hermano.jpeg" height="200px" width="200px" alt="Gran Hermano">
-            </ul>
+            <article class="list-pgms">
+                <img class="image-pgms" src="../image/tv-policas-en-accion.jpeg"  alt="Policias En Accion">
+                <img class="image-pgms" src="../image/tv-carceles.jpg"  alt="Carceles">
+                <img class="image-pgms" src="../image/tv-am.jpg"  alt="Am">
+                <img class="image-pgms" src="../image/tv-cuestion-de-peso.jpg"  alt="Cuestion De Peso">
+                <img class="image-pgms" src="../image/tv-gran-hermano.jpeg"  alt="Gran Hermano">
+            </article>
 
             <p>Estos programas han sido conocidos por su enfoque documental y realista, lo que ha permitido a El Magyar
                 desarrollar un estilo de edición con características de videoclip, donde el ritmo, la música y la imagen
                 se fusionan de manera impactante y dinámica.</p>
-            <div></div>
+        </section>
 
-        </article>
-        <div></div>
-        <article>
-
-        <p><strong>El Magyar Del Molino permanece profundamente conectado con sus raíces y a menudo regresa a Buenos
+        
+        <article class="text-cineytv">
+            <p>>El Magyar Del Molino permanece profundamente conectado con sus raíces y a menudo regresa a Buenos
                 Aires, Argentina, para apoyar iniciativas comunitarias y ser mentor de aspirantes a artistas. Su
                 viaje
                 desde el talento local hasta la sensación global es un testimonio de su dedicación, pasión y el
                 poder
-                transformador de la música.</strong></p>
+                transformador de la música.</p>
         </article>
+
+        <div></div>
 
 
         <h4 class="suscribete">SUSCRÍBETE</h4>
-        <br>
+
         <P>Recibi actualizaciones por correo electrónico sobre lanzamientos, información de nuevos productos,
             acceso exclusivo y más.</P>
-        <form action="/submit" method="post">
+        
+            <form action="/submit" method="post">
             <!-- etiqueta contenedora-->
             <label for="Nombre"></label>
-            <br>
+
             <input type="text" name="nombre">
             <div></div>
 
-
-            <button>Suscríbete ahora</button>
-
+            <button class="boton-suscribite">Suscríbete ahora</button>
 
 
-            <footer class="social-container2">
-                <div>
-                    <button><img src="../image/Vector-facebook.png" alt="Facebook"></button>
-                    <button><img src="../image/logos_instagram-icon.png" alt="Instagram"></button>
-                    <button><img src="../image/bi_twitter.png" alt="bi_twitter"></button>
-                    <button><img src="../image/Vector -linkedin.png" alt="-linkedin"></button>
-                </div>
-            </footer>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-                crossorigin="anonymous"></script>
-
+        <footer class="social-container2">
+            <div>
+                <button><img src="../image/Vector-facebook.png" alt="Facebook"></button>
+                <button><img src="../image/logos_instagram-icon.png" alt="Instagram"></button>
+                <button><img src="../image/bi_twitter.png" alt="bi_twitter"></button>
+                <button><img src="../image/Vector -linkedin.png" alt="-linkedin"></button>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     </body>
 
 </html>
