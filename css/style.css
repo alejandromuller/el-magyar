@@ -14,7 +14,7 @@
 
 
 body{
-   height: 100%;
+   height: 100vh;
 }
 
 
@@ -62,8 +62,8 @@ margin: 0 auto;
    word-wrap: break-word;
    margin-left: 150px;   
    /* border: 1px solid white*/;
-
 }
+
 
 .div-video-intro {display: flex;
    justify-content: end;
@@ -80,7 +80,6 @@ margin: 0 auto;
 .navbar {
    border: 1px solid white;
 }
-
 
 .flex-nav {
    display: flex;
