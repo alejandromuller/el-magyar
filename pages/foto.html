@@ -12,80 +12,80 @@
     <!-- Linkeo des css -->
     <link rel="stylesheet" href="../css/style.css">
     <title>El Magyar Del Molino</title>
-
 </head>
 
 
 <body>
-    <main class="main-container">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand logo-categorias" href="/">EL MAGYAR </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation" onclick="location.href='index.html'>
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">EL MAGYAR</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav mr-auto">
+
+                </div>
+                <div class=" my-2 my-lg-0">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="dropdown-item" href="#"></a>
+                            <a class="dropdown-item" href="./musica.html">Musica</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" href="./foto.html">Foto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="dropdown-item" href="#"></a>
+                            <a class="dropdown-item" href="./cineytv.html">Cine y tv</a>
                         </li>
                         <li class="nav-item">
-                            <a class="dropdown-item" href="#"></a>
+                            <a class="dropdown-item" href="./biografia.html">Bio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="dropdown-item" href="#"></a>
+                            <a class="dropdown-item" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
-                    <div class="form-inline my-2 my-lg-0">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="./musica.html">Musica</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="./foto.html">Foto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="./cineytv.html">Cine y tv</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="./biografia.html">Bio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="./contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main class="main-container">
+
         <section>
             <article>
                 <div class="titulo-generico">
                     <h2 class="titulo-seccion">Fotografia</h2>
                 </div>
+                <h3 class="titulo-seccion-h3">Obras</h3>
+
                 <!-- BOOTSTRAP CAROUSEL COMPONENT  -->
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active container-image-musica">
-                            <img class="d-block w-100 " src="../image/a01-panoramica-musica-okok.jpg" alt="Panoramica foto 01">
+                            <img class="d-block w-100 " src="../image/a01-panoramica-musica-okok.jpg"
+                                alt="Panoramica foto 01">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100 " src="../image/a03-panoramica-dorrego-foto-okok.jpg" alt="Panoramica foto 03">
+                            <img class="d-block w-100 " src="../image/a03-panoramica-dorrego-foto-okok.jpg"
+                                alt="Panoramica foto 03">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100 " src="../image/a05-panoramica-carranza-foto-okok.jpg" alt="Panoramica foto 05">
+                            <img class="d-block w-100 " src="../image/a05-panoramica-carranza-foto-okok.jpg"
+                                alt="Panoramica foto 05">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100 " src="../image/a02-panoramica-zarate.foto-okok.jpg" alt="Panoramica foto 02">
+                            <img class="d-block w-100 " src="../image/a02-panoramica-zarate.foto-okok.jpg"
+                                alt="Panoramica foto 02">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100 " src="../image/a04-panoramica-honorio-foto-okok.jpg" alt="Panoramica foto 04">
+                            <img class="d-block w-100 " src="../image/a04-panoramica-honorio-foto-okok.jpg"
+                                alt="Panoramica foto 04">
                         </div>
 
                     </div>
@@ -98,6 +98,7 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
+
 
                 <!-- GALERIA -->
                 <div class="gallery-container">
@@ -174,17 +175,23 @@
             </article>
         </section>
 
-            <h4 class="suscribete">SUSCRÍBETE</h4>
+        <div class="newsletter-container">
 
-            <P>Recibi actualizaciones por correo electrónico sobre lanzamientos, información de nuevos productos,
-                acceso exclusivo y más.</P>
-            <form action="/submit" method="post">
-                <!-- etiqueta contenedora-->
-                <label for="Nombre"></label>
-                <br>
-                <input type="text" name="nombre">
-                <div></div>
-                <button class="suscribite-ahora">Suscríbete ahora</button>
+            <div class="newsletter-subcontainer">
+                <h4 class="suscribete">SUSCRÍBETE</h4>
+                <p>Recibi actualizaciones por correo electrónico sobre lanzamientos, información de nuevos productos,
+                    acceso exclusivo y más.</p>
+                <form action="/submit" method="post">
+                    <!-- etiqueta contenedora-->
+                    <label for="Nombre">Ingrese su Email</label>
+                    <br>
+                    <input type="text" name="nombre">
+                    <div></div>
+                    <button class="suscribite-ahora">Suscríbete ahora</button>
+                </form>
+            </div>
+        </div>
+
         <footer class="social-container2">
             <div>
                 <button><img src="../image/Vector-facebook.png" alt="Facebook"></button>
@@ -193,7 +200,15 @@
                 <button><img src="../image/Vector -linkedin.png" alt="-linkedin"></button>
             </div>
         </footer>
+
+    
+        
     </main>
+
+        
+    <footer class="footer-foto">
+        <p>&copy; 2024 El Magyar | Todos los derechos reservados.</p>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -204,4 +219,5 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

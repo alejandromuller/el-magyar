@@ -13,63 +13,53 @@
 
 <body>
 
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">EL MAGYAR</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="navbar-nav mr-auto">
+           
+              </div>
+              <div class=" my-2 my-lg-0">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="dropdown-item" href="./musica.html">Musica</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="dropdown-item" href="./foto.html">Foto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="dropdown-item" href="./cineytv.html">Cine y tv</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="dropdown-item" href="./biografia.html">Bio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="dropdown-item" href="./contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+
+
     <main class="main-container">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <h1 class="logo-categorias"><a class="navbar-brand logo-categorias " href="/">EL MAGYAR </a></h1>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation"; onclick="location.href='index.html';>
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="dropdown-item" href="#"></a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="dropdown-item" href="#"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="dropdown-item" href="#"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="dropdown-item" href="#"></a>
-                        </li>
-                    </ul>
-                    <div class="form-inline my-2 my-lg-0">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="./musica.html">Musica</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="./foto.html">Foto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="./cineytv.html">Cine y tv</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="./biografia.html">Bio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="./contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                
-                    </div>
-                </div>
-            </nav>
-        </header>
+        
 
 
 
         <section>
             <article class="container-musica">
 
-                <h1 class="titulo-musica">Musica</h1>
+                <h2 class="titulo-musica">Musica</h2>
 
                 <!-- BOOTSTRAP CAROUSEL COMPONENT 
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -101,7 +91,33 @@
                     </a>
                 </div>  -->
 
-                <h3 class="suscribite-ahora" class="titulo-musica-colaboraciones" >Colaboraciones</h3>
+                <h3 class="titulo-seccion-h3" class="titulo-musica-colaboraciones">Obras</h3>
+
+                <div class="musica-video-container">
+                    <div class="child-video-musica-simple">
+                        <iframe src="https://www.youtube.com/embed/znIw0ws4clw" controls height="240px"
+                            width="427px"></iframe>
+                        <iframe src="https://www.youtube.com/embed/B5X4jKMQDYI" controls height="240px"
+                            width="427px"></iframe>
+                    </div>
+                    <div class="child-video-musica">
+                        <iframe src="https://www.youtube.com/embed/xAya-GjWFvA" controls height="240px"
+                            width="427px"></iframe>
+                        <iframe src="https://www.youtube.com/embed/K1HdMCCN85Q" controls height="240px"
+                            width="427px"></iframe>
+                    </div>
+                </div>
+
+                <p class="suscribite-ahora">El Magyar Del Molino permanece profundamente conectado con sus raíces y a menudo
+                    regresa a Buenos
+                    Aires, Argentina, para apoyar iniciativas comunitarias y ser mentor de aspirantes a artistas.
+    
+                <p class="suscribite-ahora">Su viaje desde el talento local hasta la sensación global es un testimonio de su
+                    dedicación, pasión y el
+                    poder transformador de la música.</p>
+                </p>
+
+                <h3 class="titulo-seccion-h3" class="titulo-musica-colaboraciones">Colaboraciones</h3>
 
                 <div class="musica-video-container">
                     <div class="child-video-musica">
@@ -118,29 +134,33 @@
                         <iframe src="https://www.youtube.com/embed/yu3TXHuPI4Q" controls height="240px"
                             width="427px"></iframe>
                     </div>
-                </div> 
+                    <div class="child-video-musica">
+                        <iframe width="427px" height="240px" src="https://www.youtube.com/embed/T_1JArfKo8E?si=yyi8ZqurkFSzS0qZ" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
             </article>
-            
-            <p class="suscribite-ahora">El Magyar Del Molino permanece profundamente conectado con sus raíces y a menudo regresa a Buenos
-                    Aires, Argentina, para apoyar iniciativas comunitarias y ser mentor de aspirantes a artistas. 
-                    
-                    
-            <p class="suscribite-ahora">Su viaje desde el talento local hasta la sensación global es un testimonio de su dedicación, pasión y el
-                poder transformador de la música.</p></p>
 
-            <h4 class="suscribete">SUSCRÍBETE</h4>
 
-            <P>Recibi actualizaciones por correo electrónico sobre lanzamientos, información de nuevos productos,
-                acceso exclusivo y más.</P>
+            <div class="newsletter-container">
 
-            <form action="/submit" method="post">
-
-                <!-- etiqueta contenedora-->
-                <label for="Nombre"></label>
-
-                <input type="text" name="nombre">
-
-                <button class="suscribite-ahora">Suscríbete ahora</button>
+                <div class="newsletter-subcontainer">
+                    <h4 class="suscribete">SUSCRÍBETE</h4>
+                    <p>Recibi actualizaciones por correo electrónico sobre lanzamientos, información de nuevos productos,
+                        acceso exclusivo y más.</p>
+                    <form action="/submit" method="post">
+                        <!-- etiqueta contenedora-->
+                        <label for="Nombre">Ingrese su Email</label>
+                        <br>
+                        <input type="text" name="nombre">
+                        <div></div>
+                        <button class="suscribite-ahora">Suscríbete ahora</button>
+                    </form>
+                </div>
+            </div>
 
 
                 <footer class="social-container2">

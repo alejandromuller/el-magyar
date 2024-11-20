@@ -1,0 +1,208 @@
+/* --------------- GLOBAL CONFIG ----------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &,
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  height: 100vh;
+  background-color: green!important;
+}
+
+/* --------------- HOME PAGE CSS ----------------- */
+
+.main-home-container {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+
+  .imagen-background {
+    width: 100%;
+    height: 90vh;
+    background-image: url("../image/base-index.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .nav-container {
+    padding-top: 100px;
+    padding-right: 4rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      color: #e5e5e5;
+      font-size: 5rem !important;
+      font-family: "Inter", sans-serif;
+      text-shadow: 14px 4px 10px grey;
+      font-weight: 700;
+      word-wrap: break-word;
+      margin-left: 150px;
+    }
+
+    .div-video-intro {
+      display: flex;
+      justify-content: end;
+      margin-left: 4rem;
+
+      .video-intro {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .flex-nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: end;
+      gap: 6;
+      margin-right: 50px;
+      text-shadow: 4px 4px 10px grey;
+
+      .nav-list {
+        list-style: none;
+        margin-right: 7.5rem;
+
+        .nav-link {
+          font-size: 4rem;
+          text-decoration: none;
+          color: #d1d1d1;
+          text-shadow: 2px 2px 5px 10px rgb(182, 182, 182);
+        }
+      }
+    }
+  }
+}
+
+.main-container {
+  max-width: 65vw;
+  margin: 0 auto;
+}
+
+.titulo-seccion-h3 {
+  background-color: rgb(119, 119, 119);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.suscribite-ahora {
+  background-color: rgb(42, 42, 42);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.social-container {
+  margin-left: 50px;
+
+  img {
+    background-color: black;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+  background-color: black !important;
+}
+
+/* --------------- FOTOS PAGE SECTION ----------------- */
+
+.logo-nav-link {
+  a {
+    text-decoration: none;
+  }
+}
+
+.logo2 {
+  border: 1px solid black;
+  margin-left: 2rem;
+  color: black;
+  font-size: 34px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  height: 100%;
+}
+
+.container-musica {
+  border: 1px solid black;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+
+  .musica-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+
+    .title-musica {
+      text-align: center;
+    }
+
+    .list-musica {
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      padding: 100px 0;
+      gap: 50px;
+      text-align: center;
+      text-decoration: none;
+      list-style: none;
+    }
+  }
+
+  .musica-video-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 50px 0;
+
+    .child-video-musica {
+      text-align: center;
+    }
+
+    .child-video-musica-simple {
+      text-align: none;
+    }
+  }
+
+  .minuevaclase{
+    color: black;
+}
+
+
+
+}
+
+
+
+
+/* Continúa el resto de las secciones del mismo modo anidando las clases... */
