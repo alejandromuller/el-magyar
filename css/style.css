@@ -67,6 +67,8 @@ margin: 0 auto;
 }
 
 
+
+
 .div-video-intro {display: flex;
    justify-content: end;
    margin-left: 4rem;
@@ -115,11 +117,30 @@ margin: 0 auto;
    background-color:rgb(119, 119, 119); /* Grey */
    border: none;
    color: white;
+   justify-content: center;
    font-size: 24px;
    padding: 15px 32px;
    text-align: center;
    text-decoration: none;
+
+
+}
+
+.suscribite-ahora-final {
+   background-color:rgb(44, 44, 44); /* Grey */
+   border: none;
+   color: white;
+   padding: 35px;
+   text-align: center;
+   text-decoration: none;
    display: inline-block;
+   font-size: 28px;
+}
+
+.suscribite-ahora-lista {
+
+
+
 }
 
 .suscribite-ahora{
@@ -131,6 +152,11 @@ margin: 0 auto;
    text-decoration: none;
    display: inline-block;
    font-size: 16px;
+}
+
+.boton-stream {
+margin-left: 50%;
+
 }
 
 .social-container {
@@ -278,9 +304,9 @@ margin: 0 auto;
    text-decoration: none;
 }
 
+
 .titulo-musica{
    display: flex;
-   padding-top: 1rem;
    padding-bottom: 1rem;
    color: black;
    justify-content: center;
@@ -335,7 +361,7 @@ margin: 0 auto;
 
 .social-container2 {
    display: flex;
-   justify-content: flex-end;
+   justify-content: center;
    /* Alinea los elementos al final (derecha) */
    width: 100%;
    padding: 50px;
@@ -403,11 +429,19 @@ margin: 0 auto;
 
 .list-pgms{
    display: grid;
+   background-color: #dadada;
+   justify-content: center;
    grid-template-columns: 1fr 1fr;
    gap: 80px;
-   padding: 250px;
-   padding-top: 50px;
-   padding-bottom: 50px;
+   padding: 75px;
+   border: 20px solid grey;
+}
+
+.foto-cineytv {
+
+   justify-content: center;
+   max-width: 100%;
+   border: 15px solid rgb(141, 141, 141);
 }
 
 .image-pgms{
@@ -422,21 +456,28 @@ margin: 0 auto;
 
 }
 
-.main-container-contacto{
+.main-container{
    height: 80%;
    display: flex;
    flex-direction: column;
    justify-content: start;
-   padding-top: 80px;
+   padding-top: 1rem;
 }
 
 /* ---------------  BIO SECTION -----------------  */
 
 
-/* .foto-magyar-01 {
+.foto-magyar-01 {
+   display: grid;
+   justify-content: center;
+   max-width: 100%;
 
-} */
+   /*border: 25px black;
+   border: 5px black; */
 
+   padding: 50px 50px;
+
+}
 
 
 
@@ -498,7 +539,7 @@ margin: 0 auto;
    display: flex;
    flex-direction: column;
    justify-content: center;
-gap: 10px;
+   gap: 10px;
 }
 
 .form-group{
@@ -510,13 +551,14 @@ gap: 10px;
    border: 1px solid black;
    padding: 40px 250px;
 }
+
 .newsletter-subcontainer{
    border: 1px solid black;
-  padding: 10px;
+   padding: 10px;
 }
 
-.footer-foto {
 
+.footer-foto {
    bottom: 0;
    left: 0;
    width: 100%;
@@ -525,12 +567,13 @@ gap: 10px;
    padding-bottom: 20px;
    color: white;
    background-color: black !important;
+
    /*border: 1px solid white;*/
 }
 
-.suscribite-ahora{
-   margin: 20px 0;
-}
+
+
+
 
 /* ---------------  MEDIA QUERIES RESPONSIVE -----------------  */
 
@@ -557,8 +600,9 @@ gap: 10px;
    }
 
    .musica-video-container{
-
       grid-template-columns: 1fr ;
+
+
    }
 
 }
@@ -572,7 +616,7 @@ gap: 10px;
    }
 .form-contacto-container{
    padding:50px;
-
+   border: none;
    margin: 0 20px;
 }
    .logo{
