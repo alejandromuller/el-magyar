@@ -1,0 +1,28 @@
+@import "../utils/variables";
+
+// Estilo dl body
+body {
+  background-color: #e9e9e9 !important;
+  height: 100vh;
+  font-family: $font-primary;
+  font-size: $font-base-size;
+  line-height: $line-height-base;
+  color: #333;
+}
+
+// Encabezados de mi pagina
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-secondary;
+  font-weight: $heading-font-weight;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+p {
+  font-family: $font-primary;
+}
