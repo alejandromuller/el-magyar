@@ -38,7 +38,7 @@ body{
 }
 
 .nav-container{
-   padding-top: 100px;
+   padding-top: 4rem;
    padding-right: 4rem;
    display: flex;
    width: 100%;
@@ -72,13 +72,13 @@ margin: 0 auto;
 .div-video-intro {display: flex;
    justify-content: end;
    margin-left: 4rem;
-   /*border: 1px solid white;*/;
+   border: 1px solid white;
 }
 
 .video-intro {
    max-width: 100%;
    height: auto;
-   ;
+   
 }
 
 
@@ -122,8 +122,6 @@ margin: 0 auto;
    padding: 15px 32px;
    text-align: center;
    text-decoration: none;
-
-
 }
 
 .suscribite-ahora-final {
@@ -131,17 +129,13 @@ margin: 0 auto;
    border: none;
    color: white;
    padding: 35px;
+   margin-top: 20px;
    text-align: center;
    text-decoration: none;
    display: inline-block;
    font-size: 28px;
 }
 
-.suscribite-ahora-lista {
-
-
-
-}
 
 .suscribite-ahora{
    background-color:rgb(42, 42, 42); /* Grey */
@@ -159,10 +153,20 @@ margin-left: 50%;
 
 }
 
+.social-container-index {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+
 .social-container {
    margin-left: 50px;
    
 }
+
+
 
 .social-container img {
    background-color: black;
@@ -293,7 +297,7 @@ margin-left: 50%;
    color: black;
 }
 
-.titulo-musica.colaboraciones{
+.titulo-musica-colaboraciones{
    display: flex;
    color: black;
    justify-content: center;
@@ -302,6 +306,14 @@ margin-left: 50%;
    word-wrap: break-word;
    font-weight: 500;
    text-decoration: none;
+
+}
+
+.btn {
+   margin-bottom: 25px;
+
+
+
 }
 
 
@@ -364,7 +376,8 @@ margin-left: 50%;
    justify-content: center;
    /* Alinea los elementos al final (derecha) */
    width: 100%;
-   padding: 50px;
+   padding: 5px;
+
    /* Ajusta el padding según sea necesario */
    border-top: 1px solid black;
    /* Opcional: agrega una línea superior para separar el footer */
@@ -451,9 +464,8 @@ margin-left: 50%;
 
 .form-contacto-container{
    margin: 0 auto;
-   border: 1px solid black;
-   padding: 120px;
-
+   /*border: 1px solid black;*/
+   padding-top: 50x;
 }
 
 .main-container{
@@ -494,16 +506,16 @@ margin-left: 50%;
 .formulario-container{
    border: 1px solid black;
 
- 
+
 }
 
 .formulario-container form{
    border: 1px solid black;
- 
+
    /* margin: 0 220px; */
 
 }
- 
+
 
 
 /* no logro hacerlo andar */
@@ -548,7 +560,7 @@ margin-left: 50%;
 }
 
 .newsletter-container{
-   border: 1px solid black;
+
    padding: 40px 250px;
 }
 
@@ -682,10 +694,10 @@ margin-left: 50%;
 
    /* Obras centrado en mobile */
 
-   /* .titulo-seccion-h3{
+   .titulo-seccion-h3{
       text-align: center!important;
       width: 100%;
-   } */
+   }
 
    .carousel{
       display:none!important;
