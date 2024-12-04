@@ -1,7 +1,13 @@
 @charset "UTF-8";
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
   background-color: #e9e9e9 !important;
-  height: 100vh;
   font-family: "Arial, sans-serif";
   font-size: 16px;
   line-height: 1.5;
@@ -51,16 +57,13 @@ p {
   background-position: center;
   background-repeat: no-repeat;
 }
-.main-home-container .imagen-background .nav-container {
-  padding-top: 4rem;
-  padding-right: 4rem;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  /*border: 1px solid white; */
+.main-home-container .imagen-background header {
+  padding: 0;
+  margin: 0;
 }
-.main-home-container .imagen-background .nav-container header div .logo {
+.main-home-container .imagen-background header div .logo {
+  background-color: rgba(0, 0, 0, 0.68); /* Fondo negro con 80% de opacidad */
+  padding: 20px 0; /* Espaciado superior e inferior */
   color: #e5e5e5;
   font-size: 5rem !important;
   font-family: "Arial, sans-serif";
@@ -68,40 +71,62 @@ p {
   text-shadow: 14px 4px 10px grey;
   font-weight: 700;
   word-wrap: break-word;
-  margin-left: 150px;
   /* border: 1px solid white*/
 }
-.main-home-container .imagen-background .nav-container header .div-video-intro {
+.main-home-container .imagen-background .menu-inicio {
+  background-color: rgba(0, 0, 0, 0.38); /* Fondo negro con 80% de opacidad */
+  padding: 0px 0; /* Espaciado superior e inferior */
+}
+.main-home-container .imagen-background .menu-inicio .side-nav .flex-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6;
+  /*border: 5px solid white;*/
+  text-shadow: 4px 4px 10px grey;
+}
+.main-home-container .imagen-background .menu-inicio .side-nav .flex-nav .nav-list {
+  list-style: none;
+  margin-right: 3.5rem;
+  /*Rem o em para unidades responsivas para los textos 1 rem equivale a 16px*/
+}
+.main-home-container .imagen-background .menu-inicio .side-nav .flex-nav .nav-list .nav-link {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #d1d1d1;
+  text-shadow: 2px 2px 5px 10px rgb(182, 182, 182);
+}
+.main-home-container .imagen-background .nav-container {
+  padding-top: 4rem;
+  padding-right: 4rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /*border: 1px solid white; */
+}
+.main-home-container .imagen-background .nav-container .div-video-intro {
   display: flex;
   justify-content: end;
   margin-left: 4rem;
   border: 1px solid white;
 }
-.main-home-container .imagen-background .nav-container .sidebar .side-nav .flex-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: end;
-  gap: 6;
-  /*border: 5px solid white;*/
-  margin-right: 50px;
-  text-shadow: 4px 4px 10px grey;
-}
-.main-home-container .imagen-background .nav-container .sidebar .side-nav .flex-nav .nav-list {
-  list-style: none;
-  margin-right: 7.5rem;
-  /*Rem o em para unidades responsivas para los textos 1 rem equivale a 16px*/
-}
-.main-home-container .imagen-background .nav-container .sidebar .side-nav .flex-nav .nav-list .nav-link {
-  font-size: 4rem;
-  text-decoration: none;
-  color: #d1d1d1;
-  text-shadow: 2px 2px 5px 10px rgb(182, 182, 182);
+.main-home-container .imagen-background .nav-container .div-video-intro .video-intro {
+  height: 100%;
+  width: 600px;
 }
 .main-home-container .imagen-background .social-container-index {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 30%;
+  padding: 0;
+  margin: 0;
+}
+.main-home-container .imagen-background .social-container-index img {
+  width: 60px;
 }
 
 .main-container {
@@ -214,6 +239,12 @@ p {
   /* 2 columnas por defecto */
   gap: 15px;
   /*border: 1px solid black;*/
+  width: 100%;
+  height: 100%;
+}
+.main-container .section-foto-container article .gallery-container div .img-gallery {
+  width: 100%;
+  height: 100%;
 }
 .main-container .section-foto-container article .suscribite-ahora-final {
   background-color: rgb(44, 44, 44); /* Grey */
@@ -247,10 +278,12 @@ p {
   display: flex;
   justify-content: center;
   /* Alinea los elementos al final (derecha) */
-  width: 100%;
   padding: 5px;
   /* Ajusta el padding según sea necesario */
   border-top: 1px solid black;
+  color: black;
+  height: 100%;
+  width: 50px;
   /* Opcional: agrega una línea superior para separar el footer */
 }
 .main-container .footer-foto {
@@ -490,136 +523,7 @@ p {
   /*border: 1px solid white;*/
 }
 
-/* ---------------  FOTOS PAGE SECTION -----------------  */
-.logo-nav-link a {
-  text-decoration: none;
-}
-
-.logo2 {
-  border: 1px solid black;
-  margin-left: 2rem;
-  color: black;
-  font-size: 34px;
-  font-family: "Inter";
-  /* Asegúrarse de cargar la fuente NO OLVIDAR */
-  font-weight: 700;
-  height: 100%;
-}
-
-.logo-nav-link {
-  color: #333; /* O cualquier color que prefiera */
-  text-decoration: none;
-}
-
-.container-musica {
-  border: 1px solid black;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.musica-container2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  gap: 30px;
-}
-
-.title-musica {
-  text-align: center;
-}
-
-.list-musica {
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  gap: 50px;
-  text-align: center;
-  text-decoration: none;
-  list-style: none;
-}
-
-.child-video-musica-simple {
-  text-align: none;
-  flex-direction: none;
-}
-
-.child-video-musica {
-  text-align: center;
-}
-
-/* ---------------  MUSICA PAGE SECTION -----------------  */
-.nav2-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid black;
-}
-
-.flex-list2 {
-  margin-right: 2rem;
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid black;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-list2 {
-  list-style: none;
-}
-
-.nav-link2 {
-  font-size: 34px;
-  text-decoration: none;
-  color: black;
-}
-
-.btn {
-  margin-bottom: 25px;
-}
-
-.titulo-musica {
-  display: flex;
-  padding-bottom: 1rem;
-  color: black;
-  justify-content: center;
-  font-size: 2rem;
-  font-family: "Inter";
-  word-wrap: break-word;
-  font-weight: 500;
-  text-decoration: none;
-  background-color: rgb(213, 213, 213);
-}
-
-.child-musica {
-  display: flex;
-  flex-direction: column;
-}
-
 /* ---------------  FOTO PAGE SECTION -----------------  */
-.img-gallery {
-  width: 100%;
-  height: 100%;
-}
-
-.social-container2-contacto {
-  display: flex;
-  justify-content: flex-end;
-  /* Alinea los elementos al final (derecha) */
-  width: 100%;
-  padding: 50px;
-  /* Ajusta el padding según sea necesario */
-  border-top: 1px solid black;
-  /* Opcional: agrega una línea superior para separar el footer */
-}
-
 .social-container2 img {
   color: black;
   height: 100%;
@@ -627,34 +531,6 @@ p {
 }
 
 /* ---------------  CINE Y TV SECTION -----------------  */
-.cineytv-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid black;
-}
-
-.titulo-carrera {
-  display: flex;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  color: black;
-  justify-content: center;
-  font-size: 2rem;
-  font-family: "Inter";
-  word-wrap: break-word;
-  font-weight: 500;
-  text-decoration: none;
-  background-color: rgb(213, 213, 213);
-  border: 1px black;
-}
-
-.text-cineytv {
-  font-size: 3rem;
-  text-align: center;
-}
-
 .list-pgms {
   display: grid;
   background-color: #dadada;
@@ -665,15 +541,6 @@ p {
   border: 20px solid grey;
 }
 
-.main-container {
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  padding-top: 1rem;
-}
-
-/* ---------------  BIO SECTION -----------------  */
 /* ---------------  CONTACTO PAGE SECTION -----------------  */
 .body-contacto {
   height: 100%;
@@ -688,11 +555,6 @@ p {
   /* margin: 0 220px; */
 }
 
-/* no logro hacerlo andar */
-.boton-enviar {
-  border: 5px;
-}
-
 .titulo-contacto {
   /*border: 1px solid black;*/
   width: 100%;
@@ -703,19 +565,8 @@ p {
   font-size: 2rem !important;
 }
 
-.menu-container {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-}
-
 .form-control {
   padding: 20px 0;
-}
-
-.form-group {
-  border: 1px solid black;
-  padding: 20px;
 }
 
 /* ---------------  MEDIA QUERIES RESPONSIVE -----------------  */
@@ -732,6 +583,55 @@ p {
 @media (max-width: 1368px) {
   .newsletter-container {
     padding: 20px 20px;
+  }
+  .main-home-container {
+    /*  %  - unidades responsivas para las imagenes */
+  }
+  .main-home-container .imagen-background header {
+    padding: 0;
+    margin: 0;
+  }
+  .main-home-container .imagen-background header div .logo {
+    background-color: rgba(0, 0, 0, 0.68); /* Fondo negro con 80% de opacidad */
+    font-size: 3rem !important;
+  }
+  .main-home-container .imagen-background .menu-inicio .side-nav .flex-nav .nav-list {
+    margin-right: 0.5rem;
+  }
+  .main-home-container .imagen-background .menu-inicio .side-nav .flex-nav .nav-list .nav-link {
+    gap: 0 !important;
+    font-size: 1.5rem;
+  }
+  .main-home-container .imagen-background .nav-container {
+    padding-top: 4rem;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid white; */
+  }
+  .main-home-container .imagen-background .nav-container .div-video-intro {
+    display: flex;
+    justify-content: end;
+    margin-left: 4rem;
+    border: 1px solid white;
+  }
+  .main-home-container .imagen-background .nav-container .div-video-intro .video-intro {
+    height: 100%;
+    width: 400px;
+  }
+  .main-home-container .imagen-background .social-container-index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    padding: 0;
+    margin: 0;
+  }
+  .main-home-container .imagen-background .social-container-index img {
+    width: 40px;
   }
   .musica-video-container {
     grid-template-columns: 1fr;
@@ -750,10 +650,6 @@ p {
   .logo {
     font-size: 4rem !important;
     margin: 0 !important;
-  }
-  .nav-container {
-    display: flex;
-    flex-direction: column;
   }
   .main-container {
     max-width: 100%;
@@ -821,7 +717,11 @@ p {
   }
 }
 /* MEDIA QUERIE Tablet (768px - 1024px) */
-@media (max-width: 1024px) {
+@media (min-width: 500px) {
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+  }
   .gallery-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -830,7 +730,6 @@ p {
     background-size: contain;
   }
 }
-/* MEDIA QUERIE Desktop (más de 1300px) */
 @media (min-width: 1300px) {
   .container {
     height: 1300px;
@@ -855,6 +754,7 @@ p {
     background-size: contain;
   }
 }
+/* Media querie para tablet-max (tablet) */
 /* Media querie para tablet-max (hasta 1024px aprox) */
 @media (max-width: 1024px) {
   .gallery-container {

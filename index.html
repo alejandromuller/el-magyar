@@ -16,39 +16,94 @@
 </head>
 
 <body>
+    <style>
+        /* Asegúrate de que el body y el html ocupen toda la altura */
+
+        /* Imagen de fondo que ocupa toda la pantalla */
+        .main-home-container {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            background-image: url('./path-to-your-image.jpg');
+            /* Ruta de la imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .sidebar {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 20px;
+        }
+
+        .social-container-index {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+
     <!-- Imagen background -->
     <div class="main-home-container">
+        <main class="imagen-background">
 
-        <main class="imagen-background ">
 
-            <div class="nav-container ">
-                <!-- Navbar Section -->
+            <header>
+                <!-- SECTION LOGO -->
+                <div>
+                    <h1 class="logo">EL MAGYAR</h1>
+                </div>
+            </header>
 
-                <header>
-                    <!-- SECTION LOGO -->
-                    <div>
-                        <h1 class="logo">EL MAGYAR</h1>
-                    </div>
-                    <div class="div-video-intro">
-                        <video class="video.Intro" src="video/MAGYAR-DEBUT-Intro.mp4" width="640" height="360" controls
-                            autoplay loop muted></video>
-                    </div>
-
-                </header>
-                <!-- Sidebar Right Section -->
-                <aside class="sidebar">
-                    <nav class="side-nav">
-                        <ul class="flex-nav">
-                            <li class="nav-list"><a class="nav-link" href="./pages/biografia.html">Bio</a></li>
-                            <li class="nav-list"><a class="nav-link" href="./pages/foto.html">Foto</a></li>
-                            <li class="nav-list"><a class="nav-link" href="./pages/musica.html">Musica</a></li>
-                            <li class="nav-list"><a class="nav-link" href="./pages/cineytv.html">Cine y TV</a></li>
-                            <li class="nav-list"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
-                        </ul>
-                    </nav>
-                </aside>
-                
+            <!-- Sidebar Right Section -->
+            <div class="menu-inicio">
+                <nav class="side-nav">
+                    <ul class="flex-nav">
+                        <li class="nav-list"><a class="nav-link" href="./pages/biografia.html">Bio</a></li>
+                        <li class="nav-list"><a class="nav-link" href="./pages/foto.html">Foto</a></li>
+                        <li class="nav-list"><a class="nav-link" href="./pages/musica.html">Musica</a></li>
+                        <li class="nav-list"><a class="nav-link" href="./pages/cineytv.html">Cine y TV</a></li>
+                        <li class="nav-list"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
             </div>
+
+
+
+            <div class="nav-container">
+
+                <div class="div-video-intro">
+                    <video class="video-intro" src="video/MAGYAR-DEBUT-Intro.mp4" controls
+                        autoplay loop muted></video>
+                </div>
+
+
+
+
+
+            </div>
+
+
 
             <div class="social-container-index">
                 <img src="./image/verctor-youtube-gris.png" alt="youtube">
@@ -57,23 +112,11 @@
                 <img src="./image/vector-Instagram-gris.png" alt="Instagram">
             </div>
         </main>
-
-
-
         <footer class="footer">
             <p>&copy; 2024 El Magyar | Todos los derechos reservados.</p>
         </footer>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
 </body>
+
 
 </html>
