@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow-x: hidden !important;
 }
 
 body {
@@ -173,8 +174,10 @@ p {
 }
 .main-container section article .text-cine-child {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
-.main-container section article .text-cine-child .suscribite-ahora-final {
+.main-container section article .text-cine-child div .suscribite-ahora-final {
   background-color: rgb(44, 44, 44); /* Grey */
   border: none;
   color: white;
@@ -185,7 +188,8 @@ p {
   display: inline-block;
   font-size: 28px;
 }
-.main-container section article .text-cine-child .suscribite-ahora {
+.main-container section article .text-cine-child div .suscribite-ahora {
+  width: 100%;
   background-color: rgb(42, 42, 42); /* Grey */
   border: none;
   color: white;
@@ -202,8 +206,11 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   padding: 50px 0;
+}
+.main-container section article .musica-video-container .child-video-musica {
+  margin: 20px;
+  text-align: center;
 }
 .main-container section .newsletter-container {
   padding: 40px 250px;
@@ -213,6 +220,9 @@ p {
   padding: 10px;
 }
 .main-container section .social-container2 {
+  gap: 20px;
+  padding: 25px;
+  margin-bottom: 25px;
   display: flex;
   justify-content: center;
   /* Alinea los elementos al final (derecha) */
@@ -580,7 +590,105 @@ p {
     display: none;
   }
 }
+@media (max-width: 1300px) {
+  .main-container section article .musica-video-container {
+    grid-template-columns: 1fr !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media (max-width: 1368px) {
+  .main-container {
+    max-width: 65vw;
+    margin: 0 auto;
+    /* ---------------  MUSICA PAGE CSS  -----------------  */
+  }
+  .main-container section .titulo-seccion {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: black;
+    justify-content: center;
+    font-size: 2rem;
+    word-wrap: break-word;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: rgb(213, 213, 213);
+    border: 1px black;
+  }
+  .main-container .social-container2 {
+    padding: 25px;
+    margin-bottom: 25px;
+    height: 10vh;
+    display: flex;
+    gap: 20px;
+  }
+  .main-container .social-container2 img {
+    width: 50px;
+    height: 50px;
+  }
+  section .titulo-seccion-h3 {
+    background-color: rgb(119, 119, 119); /* Grey */
+    border: none;
+    color: white;
+    justify-content: center;
+    font-size: 24px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+  }
+  section .titulo-musica-colaboraciones {
+    display: flex;
+    color: black;
+    justify-content: center;
+    font-size: 1rem;
+    font-family: "Inter";
+    word-wrap: break-word;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  section article .text-cine-child {
+    text-align: center;
+  }
+  section article .text-cine-child .suscribite-ahora-final {
+    background-color: rgb(44, 44, 44); /* Grey */
+    border: none;
+    color: white;
+    padding: 35px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+  }
+  section article .text-cine-child .suscribite-ahora {
+    background-color: rgb(42, 42, 42); /* Grey */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  section article .musica-video-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0;
+  }
+  .newsletter-container {
+    padding: 0 !important;
+  }
+  .newsletter-container .newsletter-subcontainer {
+    border: 1px solid black;
+    padding: 10px;
+  }
   .newsletter-container {
     padding: 20px 20px;
   }
@@ -600,7 +708,7 @@ p {
   }
   .main-home-container .imagen-background .menu-inicio .side-nav .flex-nav .nav-list .nav-link {
     gap: 0 !important;
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
   .main-home-container .imagen-background .nav-container {
     padding-top: 4rem;
@@ -639,6 +747,12 @@ p {
 }
 /* MEDIA QUERIE Mobile (menos de 768px) */
 @media (max-width: 768px) {
+  .main-container section article .musica-video-container {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .newsletter-container {
     padding: 20px 20px;
   }

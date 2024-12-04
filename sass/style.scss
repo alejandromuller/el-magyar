@@ -120,11 +120,10 @@
       height: 30%;
       padding: 0;
       margin: 0;
-  
-        img {
-          width: 60px;
-        }
-    
+
+      img {
+        width: 60px;
+      }
     }
   }
 }
@@ -186,27 +185,32 @@
       .text-cine-child {
         text-align: center;
 
-        .suscribite-ahora-final {
-          background-color: rgb(44, 44, 44); /* Grey */
-          border: none;
-          color: white;
-          padding: 35px;
-          margin-top: 20px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 28px;
-        }
+        display: flex;
+        justify-content: center;
+        div {
+          .suscribite-ahora-final {
+            background-color: rgb(44, 44, 44); /* Grey */
+            border: none;
+            color: white;
+            padding: 35px;
+            margin-top: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 28px;
+          }
 
-        .suscribite-ahora {
-          background-color: rgb(42, 42, 42); /* Grey */
-          border: none;
-          color: white;
-          padding: 15px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
+          .suscribite-ahora {
+            width: 100%;
+            background-color: rgb(42, 42, 42); /* Grey */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+          }
         }
       }
     }
@@ -219,8 +223,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+
         padding: 50px 0;
+        .child-video-musica {
+          margin: 20px;
+          text-align: center;
+        }
       }
     }
 
@@ -234,6 +242,9 @@
     }
 
     .social-container2 {
+      gap: 20px;
+      padding: 25px;
+      margin-bottom: 25px;
       display: flex;
       justify-content: center;
       /* Alinea los elementos al final (derecha) */
@@ -704,7 +715,139 @@
   }
 }
 
+@media (max-width: 1300px) {
+  .main-container {
+    section {
+      article {
+        .musica-video-container {
+          grid-template-columns: 1fr !important;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1368px) {
+
+  
+  .main-container {
+    max-width: 65vw;
+    margin: 0 auto;
+
+    /* ---------------  MUSICA PAGE CSS  -----------------  */
+
+    section {
+      .titulo-seccion {
+        display: flex;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        color: black;
+        justify-content: center;
+        font-size: 2rem;
+        // font-family: $font-primary;
+        word-wrap: break-word;
+        font-weight: 500;
+        text-decoration: none;
+        background-color: rgb(213, 213, 213);
+        border: 1px black;
+      }
+    }
+
+    .social-container2 {
+      padding: 25px;
+      margin-bottom: 25px;
+      height: 10vh;
+      display: flex;
+      gap: 20px;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+  
+      //
+    }
+    
+  }
+
+  section {
+    .titulo-seccion-h3 {
+      background-color: rgb(119, 119, 119); /* Grey */
+      border: none;
+      color: white;
+      justify-content: center;
+      font-size: 24px;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .titulo-musica-colaboraciones {
+      display: flex;
+      color: black;
+      justify-content: center;
+      font-size: 1rem;
+      font-family: $font-tertiary;
+      word-wrap: break-word;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    article {
+      .text-cine-child {
+        text-align: center;
+
+        .suscribite-ahora-final {
+          background-color: rgb(44, 44, 44); /* Grey */
+          border: none;
+          color: white;
+          padding: 35px;
+          margin-top: 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 28px;
+        }
+
+        .suscribite-ahora {
+          background-color: rgb(42, 42, 42); /* Grey */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+        }
+      }
+    }
+
+    article {
+      .musica-video-container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 50px 0;
+      }
+    }
+  }
+
+    .newsletter-container {
+      padding: 0 !important;
+
+      .newsletter-subcontainer {
+        border: 1px solid black;
+        padding: 10px;
+      }
+    }
+ 
+
   .newsletter-container {
     padding: 20px 20px;
   }
@@ -737,7 +880,7 @@
 
               .nav-link {
                 gap: 0 !important;
-                font-size: 1.5rem;
+                font-size: 1.5rem !important;
               }
             }
           }
@@ -782,13 +925,34 @@
     }
   }
 
+
+
+  
+ 
+
   .musica-video-container {
     grid-template-columns: 1fr;
   }
+
+
+
+  
 }
 
 /* MEDIA QUERIE Mobile (menos de 768px) */
 @media (max-width: 768px) {
+  .main-container {
+    section {
+      article {
+        .musica-video-container {
+          grid-template-columns: 1fr;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
   .newsletter-container {
     padding: 20px 20px;
   }
